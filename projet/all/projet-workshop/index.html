@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montaga&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section class="first">
+        <!-- <canvas id="c"></canvas>
+        <div id="pyramid" class="diagram left"></div> -->
+    
+        <header class="header">
+            <nav>
+                <div class="logoContainer">
+                    <span class="logo"><a>ThreeLuminaty</a></span>
+                </div>
+                <div class="ulContainer">
+                    <ul id="navigation">
+                        <li id="link"><a>Distortion</a></li>
+                        <li id="link"><a>CSS3D</a></li>
+                        <li id="link"><a>Importation</a></li>
+                        <li id="link"><a>Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <h1 class="titleCss">CSS 3D</h1>
+            <div class="css3d">
+                <div id="enfant1" class="child1"></div>
+                <div id="enfant2" class="child2"></div>
+                <div id="enfant3" class="child3"></div>
+                <div id="enfant4" class="child4"></div>
+                <div id="enfant5" class="child5"></div>
+                <div id="enfant6" class="child6"></div>
+                <div id="enfant7" class="child7"></div>
+                <div id="enfant8" class="child8"></div>
+                <div id="enfant9" class="child9"></div>
+
+            </div>
+            <p class="explication">Depuis .. CSS3 nous permet de faire de la 3D via le css.
+                Pour réaliser ce genre d'animation il faut utiliser de la percepctive. On la met dans plus part des cas dans le body pour avoir le meme niveau de percpective partout.
+                Cette div à un système de grille et 6 div comme enfant direct, qui vont nous servir à déterminer le degrée de rotation à effectuer pour réaliser la bonne animation dans les différents endroits </p>
+            <canvas id="import" class="diagram right"></canvas>  
+            <!--! ROBOT  -->
+        </main>
+
+        </section>
+
+        <section class="second">
+            <h1 class="titleDistortion reveal">Effet Distortion </h1>
+            <p class="distortionExplication reveal">L'effet distortion, utilise three.js dans le but de "flouter" l'image de transition pour ainsi crée un effet de distortion. Pour un effet plus harmonieux on utilise TweenMax pour gerer la vitesse de transition entre les 2 photos</p>
+            <div class="wrapper reveal"></div>
+            <footer>
+                <h1>Site Web réalisé avec la collaboration d'Issam Boumarouanne, dans le cadre de Becode</h1>
+
+                <div class="info">
+                    <div>
+                        <p>Workshop sur Three.js, mettant en pratique:</p>
+                        <ul>
+                            <li>Les animations 3D</li>
+                            <li>Import de modèle 3D</li>
+                            <li>Création d'objet tridimensionnelle</li>
+                        </ul>
+                        <a href="https://github.com/krynskibartosz/Workshop-Three.JS">Git du Workshop</a>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <div class="bartGit">
+                        <div class="bartosz">
+                            <p>Bartosz.K</p>
+                            <div class="contactLogo">
+                                <a href="https://www.linkedin.com/in/bartosz-krynski/"><img class="bartoszLogo" src="./assets/img/linkedinBlack.svg" alt=""></a>
+                                <a href="https://github.com/krynskibartosz"><img class="bartoszLogo" src="./assets/img/github-logo.svg" alt=""></a>
+                            </div>    
+                        </div>
+                        <div class="issam">
+                            <p>Issam.B</p>
+                            <div class="contactLogo">
+                                <a href="https://www.linkedin.com/in/issam-boumarouane/"><img class="logoContact" src="./assets/img/linkedinBlack.svg" alt=""></a>
+                                <a href="https://github.com/Boumarouane"><img class="logoContact" src="./assets/img/github-logo.svg" alt=""></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="./assets/js/three.min.js"></script>
+    <script src="./assets/js/GLTFLoader.js"></script>
+    <script src="./assets/js/issam.js"></script>
+    <script src="./assets/js/reveal.js"></script>
+    <script src="./assets/js/hover-effect.umd.js"></script>
+    <script src="./assets/js/css3d.js"></script>
+
+    <script>
+        var hoverDistort = new hoverEffect({
+        parent: document.querySelector('.wrapper'),
+        intensity: 1,
+        image1: './assets/img/RobotConnaissances1.jpg',
+        image2: './assets/img/RobotHeureux2.jpg',
+        displacementImage: './assets/img/4.png'
+        });
+    </script>
+
+</body>
+</html>

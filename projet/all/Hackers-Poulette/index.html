@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="Projet Hackers-poullet" content="Site: recycle-build Auteur : Krynski Bartosz et Issam Boumarouane">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Home</title>
+    <style>
+        .sidenav-trigger, nav  .material-icons
+        {
+        color: #000000 !important;
+        }
+        </style>
+</head>
+<body>
+                  <!--! Début de la navbar -->
+  <!--? jsp pq mais ça marche qu'avec la div "navbar-fixed" -->
+  <div class="navbar-fixed">
+      <nav class="transparent">
+              <div class="nav-wrapper">
+                <div class="container">
+                  <a href="./index.html" class="brand-logo center"><img src="./Asset/logo3" alt=""></a>
+                  <a href="" class="sidenav-trigger" data-target= "slide_out"><i class="material-icons">menu</i>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="./about.html" class="blue-text text-lighten-2">About</a></li>
+                    <li><a href="./shop.html" class="blue-text text-lighten-2">Shop</a></li>
+                    <li><a href="./contact.php" class="blue-text text-lighten-2">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+      </nav>
+                  <ul id="slide_out" class="sidenav">
+                      <li><a href="./about.html" class="blue-text text-lighten-2">About</a></li> 
+                      <li><a href="./shop.html" class="blue-text text-lighten-2">Shop</a></li>
+                      <li><a href="./contact.php" class="blue-text text-lighten-2">Contact</a></li>
+                  </ul>
+  </div>
+
+                  <!--! Fin de la navbar -->
+
+                  
+                  <!--! Début du carousel -->
+
+    <!-- Carousel qui prend toute la place de l'écran -->
+    <div class="slider fullscreen">
+      <!-- ul contant 4imgs pour le le carousel -->
+      <ul class="slides fullscreen" alt="Slider contenant les images">
+
+  
+        <!--! 1er slider -->
+
+        <li>
+          <img src="./Asset/home/superdordi2.jpg" class="responsive-img"  alt="Image du logode raspberry rouge et noir">
+          <!-- div pour savoir ou positioner le Titre et son sous titre -->  
+          <div class="caption left-align">
+            <h3 class="blue-text text-lighten-2" alt=" Titre du slider concerné">Récupération</h3>
+            <h5 class="blue-text text-lighten-2" alt="Sous titre explication">"Pour le bien de notre planète"</h5>
+          </div>
+        </li>
+
+        <!--! 2e slider -->
+
+        <li>
+          <img src="./Asset/home/rasberry6.jpg" class="responsive-img"  alt="image d'un fond d'écran rasberry sur un mac">  
+          <div class="caption center-align">
+            <h3 class="blue-text text-lighten-2" alt="Titre du 2ème slider">Transformation</h3>
+            <h5 class="blue-text text-lighten-2" alt="Sous-titre du 2ème slider">"Pour l'optimisation"</h5>
+          </div>
+        </li>
+
+          <!--! 3e slider -->
+          
+        <li>
+          <img src="./Asset/home/rasberryback.jpg" class="responsive-img" alt="Image d'une carte mère d'un rasberry">  
+          <div class="caption right-align">
+            <h3 class="blue-text text-lighten-2"alt="Titre principale du 3e slider.">Economie</h3>
+            <h5 class="blue-text text-lighten-2" alt="Sous titre et explication.">"Pour le bien de votre porte feuille"</h5>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+                      <!--! Fin du carousel -->
+      <!--! Je n'ai pas mis de footer pour conserver la beautée des images -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--! Script qui éxécute les images au chargement de la page -->
+    <script src="initSlider.js"></script>
+    <script>
+        const slide_menu = document.querySelectorAll(".sidenav");
+        M.Sidenav.init(slide_menu,{});
+      </script>
+</body>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Projet Hackers-poullet" content="Auteur : Krynski Bartosz et Issam Boumarouane">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Shop</title>
+    <style>
+        .sidenav-trigger, nav .material-icons
+        {
+        color: #000000 !important;
+        }
+        </style>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="#fff white">
+                <div class="nav-wrapper">
+                  <div class="container">
+                    <a href="./index.html" class="brand-logo center"><img src="./Asset/logo3" alt=""></a>
+                    <a href="" class="sidenav-trigger" data-target= "slide_out"><i class="material-icons">menu</i>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                      <li><a href="./index.html" class="blue-text text-lighten-2">Home</a></li>
+                      <li><a href="./about.html" class="blue-text text-lighten-2">About</a></li>
+                      <li><a href="./contact.php" class="blue-text text-lighten-2">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+        </nav>
+                    <ul id="slide_out" class="sidenav">
+                        <li><a href="./index.html" class="blue-text text-lighten-2">Home</a></li> 
+                        <li><a href="./about.html" class="blue-text text-lighten-2">About</a></li>
+                        <li><a href="./contact.php" class="blue-text text-lighten-2">Contact</a></li>
+                    </ul>
+    </div>
+     
+    <!--! fin de la nav bar  -->
+    <div class="row">
+      <h4 class="blue-text text-lighten-2 center" id="target">Carte mère</h4>
+            <div class="col s4 #fff white">
+              <!-- Promo Content 1 goes here -->
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light" >
+                  <img class="activator" src="./Asset/shop/rasberry2.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator #424242 grey-text text-darken-2">Raspberry Pi 3 Model B<i class="material-icons right blue-text text-lighten-2">add_circle_outline</i></span>
+                   
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title #424242 grey-text text-darken-2">Raspberry Pi 3 Model B<i class="material-icons right blue-text text-lighten-2">close</i></span>
+                  <p class="#424242 grey-text text-darken-2">
+                    Carte mère ultra-compacte avec processeur ARM Cortex-A53 Quad-Core - RAM 1 Go - VideoCore IV - HDMI - 4x USB 2.0 - RJ45 - Wi-Fi N - Bluetooth 4.1</p>
+                    <blockquote><p>prix: 19,99€</p></blockquote>
+                    <a onclick="M.toast({html: 'Article ajouter au panier'})" class="btn">Ajouter au panier  <i class="material-icons right">add_shopping_cart</i></a>
+                  
+                </div>
+              </div>
+
+            </div>
+            <div class="col s4 #fff white">
+              <!-- Promo Content 2 goes here -->
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./Asset/shop/giphy-rasberry.gif">
+                </div>
+                
+                <div class="card-content">
+                  <span class="card-title activator #424242 grey-text text-darken-2 center"> Raspberry Pi 4 Model B 4 Go<i class="material-icons right #ffee58 yellow-text text-lighten-1">add_circle_outline</i></span>
+                   
+
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title #424242 grey-text text-darken-2 "> Raspberry Pi 4 Model B 4 Go<i class="material-icons right blue-text text-lighten-2">close</i></span>
+                  <p class="#424242 grey-text text-darken-2">Carte mère ultra-compacte avec processeur ARM Cortex-A72 Quad-Core 1.5 GHz - RAM 4 Go - micro HDMI - USB 3.0 - USB 2.0 - USB-C - Gigabit Ethernet - Wi-Fi - Bluetooth 5.0</p>
+                 <blockquote>prix : 39,99€</blockquote>
+                 <a onclick="M.toast({html: 'Article ajouter au panier'})" class="btn">Ajouter au panier  <i class="material-icons right ">add_shopping_cart</i></a>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col s4 #fff white">
+              <!-- Promo Content 3 goes here -->
+              <div class="card hoverable">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./Asset/shop/rasberry3.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator #424242 grey-text text-darken-2">Raspberry Pi Zero W<i class="material-icons right blue-text text-lighten-2">add_circle_outline</i></span>
+                   
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title #424242 grey-text text-darken-2">Raspberry Pi Zero W<i class="material-icons right blue-text text-lighten-2">close</i></span>
+                  <p class="#424242 grey-text text-darken-2">Carte mère ultra-compacte avec processeur ARM11 Broadcom BCM2835 Single Core 1 Ghz- RAM 512 Mo - mini HDMI - 2 x micro USB - CSI - micro-SD - Bluetooth 4.1 - Wi-Fi b/g/n</p>
+                  <blockquote>prix : 9,99€</blockquote>
+                  <a onclick="M.toast({html: 'Article ajouter au panier'})" class="btn">Ajouter au panier  <i class="material-icons right ">add_shopping_cart</i></a>
+
+                </div>
+              </div>
+
+            </div>
+        </div>
+<h4 class="center blue-text text-lighten-2">Raspberry accessoires</h4 >
+        <div class="row"> 
+
+          <div class="col s4 #fff white">
+            <!-- Promo Content 1 goes here -->
+            <div class="card hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="./Asset/shop/souris pi.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator #424242 grey-text text-darken-2">Souris MX518<i class="material-icons right blue-text text-lighten-2">add_circle_outline</i></span>
+                 
+              </div>
+              <div class="card-reveal">
+                <span class="card-title #424242 grey-text text-darken-2">Souris MX518<i class="material-icons right blue-text text-lighten-2">close</i></span>
+                <p class="#424242 grey-text text-darken-2">Les patins en polytétrafluoroéthylène (PTFE) lui assurent une durée de vie de 250 km de glisse, sans nous dire sur quel support. Un logiciel nommé G HUB permet de créer et personnaliser jusqu’à cinq profils.</p>
+                <blockquote>prix: 4,99€</blockquote>
+                <a onclick="M.toast({html: 'Article ajouter au panier'})" class="btn">Ajouter au panier  <i class="material-icons right ">add_shopping_cart</i></a>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col s4 #fff white">
+            <!-- Promo Content 2 goes here -->
+            <div class="card hoverable">
+              <div class="card-image waves-effect waves-block waves-light" >
+                <img class="activator" src="./Asset/shop/clavier et souris pi.jpg">
+              </div>
+                  <div class="card-content">
+                      <span class="card-title activator #424242 grey-text text-darken-2 center">Kit pink<i class="material-icons right #ffee58 yellow-text text-lighten-1">add_circle_outline</i></span>
+                    </div>
+              <div class="card-reveal">
+                <span class="card-title #424242 grey-text text-darken-2">Kit pink<i class="material-icons right blue-text text-lighten-2">close</i></span>
+                <p class="#424242 grey-text text-darken-2">Tout nouveau clavier officiel azerty, proposé en blanc/framboise et noir/grisCe clavier est doté de 79 touches (dont une touche « Super »                  sérigraphiée d’une framboise), il est compatible avec tous les Raspberry Pi.On pourra offrir à son       Raspberry Pi les deux périphériques en même temps sans trop se ruiner. </p>
+                <blockquote>prix: 12,99€</blockquote>
+                <a onclick="M.toast({html: 'Article ajouter au panier'})" class="btn">Ajouter au panier  <i class="material-icons right ">add_shopping_cart</i></a>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col s4 #fff white">
+            <!-- Promo Content 3 goes here -->
+            <div class="card hoverable">
+              <div class="card-image waves-effect waves-block waves-light" >
+                <img class="activator" src="./Asset/shop/clavier pi.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator #424242 grey-text text-darken-2">Clavier Raspberry Officiel<i class="material-icons right blue-text text-lighten-2">add_circle_outline</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title #424242 grey-text text-darken-2">Clavier Raspberry Officiel<i class="material-icons right blue-text text-lighten-2">close</i></span>
+                <p class="#424242 grey-text text-darken-2">Ce clavier "azerty" inclus un hub USB avec 3 port USB supplémentaires. C'est une fonctionnalité vraiment génial car cela permet de libérer des ports sur le Raspberry-Pi et permet de brancher des périphériques USB, une souris, joystick, stick USB et plein d'autres périphériques. C'est la fête pour les périphériques!.</p>
+                <blockquote>prix: 10,99€</blockquote>
+                <a onclick="M.toast({html: 'Article ajouter au panier'})" class="btn">Ajouter au panier  <i class="material-icons right ">add_shopping_cart</i></a>
+
+              </div>
+            </div>
+
+          </div>
+      </div>
+<h4 class="blue-text text-lighten-2 center">Colorer</h4>
+      <div class="row">
+        <div class="col s4 #fff white">
+          <!-- Promo Content 1 goes here -->
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light" >
+              <img class="activator" src="./Asset/shop/boitier2.jpeg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator #424242 grey-text text-darken-2">Raspberry Pi - RPI3CASE-BG - Boîtier PC<i class="material-icons right blue-text text-lighten-2">add_circle_outline</i></span>
+               
+            </div>
+            <div class="card-reveal">
+              <span class="card-title #424242 grey-text text-darken-2">Raspberry Pi - RPI3CASE-BG - Boîtier PC<i class="material-icons right blue-text text-lighten-2">close</i></span>
+              <p class="#424242 grey-text text-darken-2"> Couvercle clipsable protection mais peut être enlevée si vous utilisez un chapeau
+                  Tous les ports primaires (microSD) accessibles
+                  Assiette amovible permet l'accès à ces merveilleux broches GPIO
+                  Ajustement parfait et sécurisé protège votre pi tout en parfait.
+                  Pieds antidérapants pour maintenir votre Raspberry Pi stable. Puissance et de lumières toujours visible à travers la fin de la coque.</p>
+                  <blockquote>prix : 1,99€</blockquote>
+                  <a onclick="M.toast({html: 'Article ajouter au panier'})" class="btn">Ajouter au panier  <i class="material-icons right ">add_shopping_cart</i></a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col s4 #fff white">
+          <!-- Promo Content 2 goes here -->
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light" >
+              <img class="activator" src="./Asset/shop/kit2.jpg">
+            </div>
+                <div class="card-content">
+                    <span class="card-title activator #424242 grey-text text-darken-2 center">LABISTS Raspberry Pi 4 Modèle B (4 B) 4Go Starter Kit<i class="material-icons right #ffee58 yellow-text text-lighten-1">add_circle_outline</i></span>
+                     
+
+                  </div>
+            <div class="card-reveal">
+              <span class="card-title #424242 grey-text text-darken-2">LABISTS Raspberry Pi 4 Modèle B (4 B) 4Go Starter Kit
+                <i class="material-icons right blue-text text-lighten-2">close</i></span>
+              <p class="#424242 grey-text text-darken-2">Tout nouveau clavier officiel azerty, proposé en blanc/framboise et noir/grisCe clavier est doté de 79 touches (dont une touche « Super » sérigraphiée d’une framboise), il est compatible avec tous les Raspberry Pi.On pourra offrir à son Raspberry Pi les deux périphériques en même temps sans trop se ruiner. </p>
+              <blockquote>prix : 12,99€</blockquote>
+              <a onclick="M.toast({html: 'Article ajouter au panier'})" class="btn">Ajouter au panier  <i class="material-icons right ">add_shopping_cart</i></a>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col s4 #fff white">
+          <!-- Promo Content 3 goes here -->
+          <div class="card hoverable">
+            <div class="card-image waves-effect waves-block waves-light" >
+              <img class="activator" src="./Asset/shop/microsd.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator #424242 grey-text text-darken-2">Carte Micro-SD NOOBS 16Go classe 10 avec Adaptateur SD<i class="material-icons right blue-text text-lighten-2">add_circle_outline</i></span>
+               
+            </div>
+            <div class="card-reveal">
+              <span class="card-title #424242 grey-text text-darken-2">Carte Micro-SD NOOBS 16Go classe 10 avec Adaptateur SD<i class="material-icons right blue-text text-lighten-2">close</i></span>
+              <p class="#424242 grey-text text-darken-2">Contenu:Carte microSD NOOBS 16Go, livrée avec un adaptateur SD, pré-chargée avec l'utilitaire officiel New Out of Box Software (NOOBS), conçu pour rendre le premier démarrage d’un Raspberry Pi plus facile.</p>
+              <blockquote>prix : 5,99€</blockquote>
+              <a onclick="M.toast({html: 'Article ajouter au panier'})" class="btn">Ajouter au panier  <i class="material-icons right ">add_shopping_cart</i></a>
+
+            </div>
+          </div>
+
+        </div>
+    </div>
+    <h4 class="blue-text text-lighten-2 center">Ecran</h4>
+
+    <div class="row">
+      <div class="col s4 #fff white">
+        <!-- Promo Content 1 goes here -->
+        <div class="card hoverable">
+          <div class="card-image waves-effect waves-block waves-light" >
+            <img class="activator" src="./Asset/shop/ecran-kit.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator #424242 grey-text text-darken-2">MAKEASY Ecran raspberry pi<i class="material-icons right blue-text text-lighten-2">add_circle_outline</i></span>
+             
+          </div>
+          <div class="card-reveal">
+            <span class="card-title #424242 grey-text text-darken-2">MAKEASY Ecran raspberry pi<i class="material-icons right blue-text text-lighten-2">close</i></span>
+            <p class="#424242 grey-text text-darken-2">Capacitif LCD Résolution de 1024 x 600 Moniteur HDMI 7 Pouces Compatible Raspberry Pi 4 pour Raspberry Pi 3 2 1 Modèle B B+ A+ BeagleBone Black Banane Pi/Pro</p>
+            <blockquote>prix : 20,99€</blockquote>
+            <a onclick="M.toast({html: 'Article ajouter au panier'})" class="btn">Ajouter au panier  <i class="material-icons right ">add_shopping_cart</i></a>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col s4 #fff white">
+        <!-- Promo Content 2 goes here -->
+        <div class="card hoverable">
+          <div class="card-image waves-effect waves-block waves-light" >
+            <img class="activator" src="giphy.gif">
+          </div>
+              <div class="card-content">
+                  <span class="card-title activator #424242 grey-text text-darken-2 center">Ecran LCD IPS 10.1" HDMI<i class="material-icons right #ffee58 yellow-text text-lighten-1">add_circle_outline</i></span>
+                </div>
+          <div class="card-reveal">
+            <span class="card-title #424242 grey-text text-darken-2">Ecran LCD IPS 10.1" HDMI<i class="material-icons right blue-text text-lighten-2">close</i></span>
+            <p class="#424242 grey-text text-darken-2">Ce moniteur LCD IPS 10,1 pouces avec une haute résolution de 1280 × 800 pixels supporte le fonctionnement des touches et la télécommande. Il est protégé par un boîtier avec support en acrylique noir de haute qualité.</p>
+            <blockquote>prix : 70,99€
+              </blockquote>
+              <a onclick="M.toast({html: 'Article ajouter au panier'})" class="btn">Ajouter au panier  <i class="material-icons right ">add_shopping_cart</i></a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col s4 #fff white">
+        <!-- Promo Content 3 goes here -->
+        <div class="card hoverable">
+          <div class="card-image waves-effect waves-block waves-light" >
+            <img class="activator" src="./Asset/shop/ecran2.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator #424242 grey-text text-darken-2"> Ecran tactile 5" pour Raspberry Pi<i class="material-icons right blue-text text-lighten-2">add_circle_outline</i></span>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title #424242 grey-text text-darken-2"> Ecran tactile 5" pour Raspberry Pi<i class="material-icons right blue-text text-lighten-2">close</i></span>
+            <p class="#424242 grey-text text-darken-2">L'écran tactile 5" pour Raspberry Pi permet la mise en place de projets intégrés comme une tablette, un système d'informations et de divertissement. L'affichage tactile de 800 x 480 pixels permet via une carte adaptateur d'accéder à une parfaite interactivité avec un clavier virtuel à l'écran.</p>
+            <blockquote>prix : 50,99€</blockquote>
+            <a onclick="M.toast({html: 'Article ajouter au panier'})" class="btn">Ajouter au panier  <i class="material-icons right ">add_shopping_cart</i></a>
+
+          </div>
+        </div>
+
+      </div>
+  </div>
+
+                        <!--! Début du Footer-->
+<!-- ligne qui fait séparation entre le contenu et le footer -->                      
+<hr>
+<!-- footer transparent -->
+<footer class="page-footer teal transparent">
+  <!-- met tt sur une même ligne -->
+    <div class="row">
+
+      <!-- Partie lien réseaux sociaux et à droite -->
+      <div class="col l12 s12">
+        <h5 class="blue-text text-lighten-2 center">Connect</h5>
+        <!-- liens prennent même espace que le titre -->
+        <div class="col l12 s12 center">
+          <a href="https://www.facebook.com/"><img src="./Asset/facebook.svg" style="height: 4vh;" alt="Liens vers la page d'accueil de Facebook" style="height: 25px;" alt=""></a>
+          <a href="https://www.instagram.com/"><img src="./Asset/instagram.svg" style="height: 4vh;" alt="Liens vers la page d'accueil de instagram"></a>
+          <a href="https://twitter.com/"><img src="./Asset/twitter.svg" style="height: 4vh;" alt="Liens vers la page d'accueil de Twitter"></a>
+          <a href="https://www.gmail.com"><img src="./Asset/gmail.svg" style="height: 4vh;" alt="Liens vers la page d'accueil de Gmail"></a>
+        </div>
+      </div>
+    </div>
+</footer>
+
+  <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      const slide_menu = document.querySelectorAll(".sidenav");
+      M.Sidenav.init(slide_menu,{});
+    </script>
+</body>
+</html>

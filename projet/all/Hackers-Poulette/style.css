@@ -1,0 +1,40 @@
+*{
+    font-family: Bellota regular;
+}
+
+
+.row img{
+    height: 45vh;
+
+}
+
+.row img:hover{
+    animation: up 4s;
+    
+}
+nav img{
+    animation: translateright 3s;
+}
+
+@keyframes up{
+    0%{
+        transform: translateX(0%);
+        
+
+    }
+    50%{
+        transform: translateX(5%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes translateright{
+    0%{
+    transform: translateX(-850%) rotate(720deg);
+    }
+    100%{
+    transform: translateX(0%);
+    }
+}

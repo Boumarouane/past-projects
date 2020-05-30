@@ -1,0 +1,385 @@
+
+
+
+
+%gridTemplate{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr;
+    grid-template-columns: repeat(12, 1fr);
+    gap : 1em;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+
+}
+::-webkit-scrollbar{
+    width: 11px; 
+    background: linear-gradient(to bottom, #1b1a1a, #181717, #151414, #121111, #0e0d0d);
+}
+
+::-webkit-scrollbar:hover{
+    width: 11px; 
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 6px;
+    background: linear-gradient(transparent,rgb(195, 18, 207));
+    transition: 1s;
+}
+::-webkit-scrollbar-thumb:hover{
+    border-radius: 6px;
+    background: linear-gradient(transparent,rgb(21, 170, 138));
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    background-image: linear-gradient(to right bottom, #1b1a1a, #181717, #151414, #121111, #0e0d0d);
+    perspective: 900px;
+    width: 100%;
+    overflow-x: hidden;
+    
+    & .first{
+        // & #c {
+        //     position: absolute;
+        //     width: 100vw;
+        //     height: 100vh;
+        //     z-index: -1;
+        //     }
+            & .diagram {
+            width: 100%;
+            height: 100%;
+            }
+            @extend %gridTemplate;
+        & .header{
+            display: grid;
+            grid-row: 1 / span 1;
+            grid-column: 1 / -1;   
+
+            & nav{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                font-weight: 500;
+                background: transparent;
+
+                & .logoContainer{
+                    display: flex;
+                    grid-column: 2 / span 1;
+                    justify-content: center;
+                    margin: .5em;
+                    height: 100%;
+                    & .logo{
+                        color: #14CCA4;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                }
+                & .ulContainer{
+                    grid-column: 3 / span 1;
+                    height: 100%;
+                    max-height: 100%;
+                
+                    & #navigation{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        height: 100%;
+                        list-style-type: none;
+                        margin: 0;
+                        & #link{
+                            margin-top: .2em;
+                            margin-right: .5em;
+                            color: #14CCA4;
+                            &:hover{
+                                border-bottom: 2px solid #14CCA4;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }             
+        }
+        & .main{
+            display: grid;
+            grid-column: 1 / -1;
+            grid-row: 2 / span 5;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+        }
+
+        & .titleCss{
+            grid-column: 2/ span 2;
+            grid-row: 1 / span 1;
+            color:#14CCA4;
+        }
+            & .css3d{
+            margin-top: 2rem;
+            display: grid;
+            grid-column: 2 / span 4;
+            grid-row: 1 / span 3;
+            backface-visibility: hidden;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr;
+            opacity: .8;
+            background: url("../../assets/img/meuf3d.jpg");
+            background-repeat:no-repeat;
+            background-size: contain;
+            background-position:center;
+            transition: 1s;
+
+            & :nth-child(1){
+                grid-column: 1 / span 1;
+                grid-row: 1 / span 1;
+            }
+            & :nth-child(2){
+                grid-column: 2 / span 1;
+                grid-row: 1 / span 1;
+            }    
+            & :nth-child(3){
+                grid-column: 3 / span 1;
+                grid-row: 1 / span 1;
+            }    
+            & :nth-child(4){
+                grid-column: 1 / span 1;
+                grid-row: 2 / span 1;
+            }   
+            & :nth-child(5){
+                grid-column: 2 / span 1;
+                grid-row: 2 / span 1;
+            }   
+            & :nth-child(6){
+                grid-column: 3 / span 1;
+                grid-row: 2 / span 1;
+            }   
+            & :nth-child(7){
+                grid-column: 1 / span 1;
+                grid-row: 3 / span 1;
+            }   
+            & :nth-child(8){
+                grid-column: 2 / span 1;
+                grid-row: 3 / span 1;
+            }   
+            & :nth-child(9){
+                grid-column: 3 / span 1;
+                grid-row: 3 / span 1;
+            }   
+
+
+
+
+             
+        }          
+        & .animOne:hover{
+            transform: rotateY(-5deg) rotateX(5deg);
+            transition: 1s;
+        }
+
+        & .animTwo:hover{
+            transform:  rotateX(10deg);
+            transition: 1s;
+    }
+
+        & .animThree:hover{
+            transform: rotateY(5deg) rotateX(8deg);
+            transition: 1s;
+        }
+
+
+
+        & .animFour:hover{
+            transform: rotateY(-8deg);
+            transition: 1s;
+        }
+        & .animFive:hover{
+            transform: rotateY(0deg) rotateX(0deg);
+            transition: 1s;
+        }
+        & .animSix:hover{
+            transform: rotateY(8deg);
+            transition: 1s;
+        }
+
+
+
+        & .animSeven:hover{
+            transform: rotateY(-8deg) rotateX(-8deg);
+            transition: 1s;
+        }
+        & .animEight:hover{
+            transform: rotateX(-18deg) rotateY(0);
+            transition: 1s;
+        }
+        & .animNine:hover{
+            transform: rotateY(8deg) rotateX(-10deg);
+            transition: 1s;
+        }
+
+
+        & .base{
+            transform: rotateY(0deg) rotateX(0deg);
+            transition: 1s;
+        }
+                             
+
+        & .explication{
+            grid-column: 8/ span 3;
+            grid-row: 2 / -1;
+            color: #EE00FF;        
+            display: flex;
+            margin: 0;
+            // font-family: 'EB Garamond', serif;
+            font-size: 1.1rem;
+                }
+        & .right {
+            grid-column: 1 / -1;
+            grid-row: 1 / span 5;
+            width: 100%;
+            height: auto;
+            }
+            & .translateBot{
+                transform: translateY(100%);
+            }
+
+    }
+
+    & .second{
+        @extend %gridTemplate;
+        padding: 0;
+        margin: 0;
+        & .titleDistortion{
+            grid-column: 2/ span 3;
+            grid-row: 2 / span 1;
+            display: flex;
+            height: 100%;
+            align-items: flex-end;   
+            color: #EE00FF;
+        }
+
+        & .distortionExplication{
+            grid-row: 3 / span 3;
+            grid-column: 2 / span 3;
+            color:#14CCA4;
+            font-size: 1rem;
+        }
+        
+        & .wrapper{
+            grid-row: 3 / span 3;
+            grid-column: 8 / span 4; 
+            & :nth-child(1){
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+        & footer{
+            margin: 0;
+            padding: 0;
+            grid-row: 6 / span 5;
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: .3fr;
+            gap: 1em;
+            background: rgba(20, 204, 164, 0.171);
+            color: #EE00FF;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            font-size: .8em;
+            & h1{
+                margin-top: 2rem;
+                font-size: .8em;
+                text-align: center;
+                grid-column: 3 / span 1;
+                color: #111010;
+                text-transform: uppercase;
+                line-height: 1.5;
+                font-size: 1em;
+                grid-column: 5 / span 3;
+            }
+            & .info{
+                margin-left: .5em;
+                grid-column: 1 / span 3;
+                grid-row: 1;
+                display: flex;
+                flex-flow: row wrap;
+                margin-bottom: .5em;
+                & a{
+                    text-decoration: none;
+                    border-bottom: 2px dotted #14CCA4;
+                    color: #14CCA4;
+                    
+                    &:hover{
+                        color: #EE00FF;
+                        border-bottom: 2px dotted #EE00FF;
+                    }
+                }
+            }
+            & .contact{
+                text-align: center;
+                grid-column: 10 / span 2;
+                grid-row: 1;
+                & .bartGit{
+                    margin-bottom: 1em;
+                    display: flex;
+                    flex-flow: row;
+                    justify-content: space-around;
+                    & .contactLogo{
+                        display: flex;
+                    }
+                    & .bartoszLogo{
+                        height: 4vh;
+                        width: 4vw;
+                    }
+                    & a {
+                        text-decoration: none;
+                        color: #EE00FF;
+                        &:hover{
+                            color: #14CCA4;
+                        }
+                    }
+                }
+
+                & .issam{
+                    margin-bottom: 1em;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: space-around;
+                    & .contactLogo{
+                        display: flex;
+                    }
+                    & .logoContact{
+                        height: 4vh;
+                        width: 4vw;
+                    }
+                    & a {
+                        text-decoration: none;
+                        color: #EE00FF;
+                        &:hover{
+                            color: #14CCA4;
+                        }
+                    }
+                }
+
+            }
+            
+        }
+    }
+
+
+}
+.reveal{
+    opacity: 0;
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(-3vw);
+    transition: 2s cubic-bezier(.5, 0, 0, 1);
+}

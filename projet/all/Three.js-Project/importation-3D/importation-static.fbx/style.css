@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: serif;
+    overflow: hidden;
+}
+h1{
+    color: black;
+    position: absolute;
+}
+
+.scene, canvas{
+    position: fixed;
+    width: 60%;
+    height: 100%;
+}
