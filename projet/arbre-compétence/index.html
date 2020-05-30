@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arbre de compétences</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container" onclick="expand()">
+        <div class="toggle"></div>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="item">
+            <section>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <p>Sécurité</p>
+            </section>
+        </div>
+
+        <div class="item">
+            <section>
+                <i class="fa fa-cogs" aria-hidden="true"></i>
+                <p>I.A</p>
+            </section>
+        </div>
+
+        <div class="item">
+            <section >
+                <i class="fa fa-server" aria-hidden="true"></i>
+                <p>Back-End</p>
+            </section>
+        </div>
+
+        <div class="item" onclick="sec()">
+            <section>
+                <i class="fa fa-desktop" aria-hidden="true"></i>
+                <p>Front-End</p>
+            </section>
+        </div>
+    </div>
+
+    <div class="menu2" id="menu2">
+        <div class="branche1">
+            <span></span>
+        </div>
+
+        <div class="branche2">
+            <span></span>
+        </div>
+
+        <div class="branche3">
+            <span></span>
+        </div>
+
+        <div class="branche4">
+            <span></span>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        let j=0;
+        let a=0;
+        let i = document.getElementById("menu").childNodes;
+        let b = document.getElementById("menu2").childNodes;
+        let o = document.getElementsByClassName("toggle").parentNodes;
+        // document.getElementById("menu").addEventListener("onload", expand() );
+        function expand(){
+            if(j==0){
+            
+            document.getElementById("menu").style.transform ='scale(1)';
+            i[1].style.transform = 'translate(-290px, -180px)';
+            i[3].style.transform = 'translate(290px,-180px)';
+            i[5].style.transform = 'translate(290px, 180px)';
+            i[7].style.transform = 'translate(-290px, 180px)';
+
+            document.getElementById("menu2").style.transform ='scale(1)';
+            b[1].style.transform = 'rotate(35deg)'+'translate(-185px, 30px)';
+            b[3].style.transform = 'rotate(145deg)'+'translate(-185px,-30px)';
+            b[5].style.transform = 'rotate(35deg)'+'translate(185px, -20px)';
+            b[7].style.transform = 'rotate(145deg)'+'translate(190px, 30px)';
+            
+            j=1;
+            }
+            
+            else{
+                
+                document.getElementById("menu").style.transform ='scale(0.9)';
+            i[1].style.transform = 'translate(0)';
+            i[3].style.transform = 'translate(0)';
+            i[5].style.transform = 'translate(0)';
+            i[7].style.transform = 'translate(0)';
+            
+            document.getElementById("menu2").style.transform ='scale(0.9)';
+            b[1].style.transform = 'translate(0)';
+            b[3].style.transform = 'translate(0)';
+            b[5].style.transform = 'translate(0)';
+            b[7].style.transform = 'translate(0)';
+
+            j=0;
+            }
+            
+            
+
+
+        }
+        
+        function sec(){
+            b[5].style.opacity = '0';
+            i[5].style.opacity = '0';
+            b[1].style.opacity = '0';
+            i[1].style.opacity = '0';
+            b[3].style.opacity = '0';
+            i[3].style.opacity = '0';
+            O[1].style.opacity = '0';
+
+}
+
+    </script>
+</body>
+</html>

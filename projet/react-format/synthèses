@@ -1,0 +1,8 @@
+react,
+philosophie de composants => découper l'application en plusieurs composant réutilisable
+			     DOM virtuelle
+	
+	avantage: réutilisable
+	
+	JSX => JS mélanger au js
+

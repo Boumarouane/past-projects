@@ -1,0 +1,279 @@
+body{
+    background: url("/home/user/arbre-compétence/vector-neuron-background.jpg");
+    width: 100%;
+    margin: 0;
+    overflow: hidden; 
+    background-size: cover;
+    padding: 0;
+}
+
+.container,.menu{
+    height: 140px;
+    width: 160px;
+    margin:auto;
+    top: 0%;
+    bottom: 15%;
+    left: 0%;
+    right: 15%;
+    cursor: pointer;
+    position: absolute;
+    transition: opacity 2s;
+}
+
+.menu{
+    z-index: -1;
+    transform: scale(0.9);
+}
+
+.toggle{
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    border-radius: 50%;
+    background: url("/home/user/arbre-compétence/logo_Becode.png");
+    background-size: cover;
+    border: 15px solid;
+    border-color: #2196f3;
+    box-shadow: 0 0 10px #2196f3,
+                0 0 40px #2196f3,
+                0 0 80px #2196f3;
+                transition: opacity 2s;
+} 
+
+.item{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 1s;
+    position: absolute;
+    top: 30%;    
+    left: 22%;
+    list-style: none;
+    box-sizing: border-box;
+} 
+
+.item:before,
+.item:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 50%;
+    filter:blur(20px);
+    opacity: 0;
+    transition: 1s; 
+    z-index: -1; 
+}
+
+.item:after{
+    filter: blur(40px);
+}
+
+.item:hover:before,
+.item:hover:after{
+    opacity: 1;
+}
+
+section{
+    position: relative;
+    bottom: 60px;
+    transition: opacity 2s;
+}
+
+p{
+    font-size: 30px;
+    position: relative;
+    bottom: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.item section{
+    position:absolute;
+    top:10px;
+    left: 10px;
+    right:10px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 70px;
+    color:#80bdb9;
+    font-size: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.item section .fa{
+    text-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition:0.5s;
+    transform:rotateY(0deg) scale(0.8);
+    opacity: 0.2;
+}
+.item section:hover .fa{
+    opacity: 1;
+    transform:scale(1.2); 
+}
+
+.item:nth-child(1) section,
+.item:nth-child(1):before,
+.item:nth-child(1):after{
+    background: linear-gradient(150deg,#15232E,#2196f3);
+}
+
+.item:nth-child(2) section,
+.item:nth-child(2):before,
+.item:nth-child(2):after{
+    background: linear-gradient(210deg,#15232E,#2196f3);
+}
+
+.item:nth-child(3) section,
+.item:nth-child(3):before,
+.item:nth-child(3):after{
+    background: linear-gradient(300deg,#15232E,#2196f3);
+}
+
+.item:nth-child(4) section,
+.item:nth-child(4):before,
+.item:nth-child(4):after{
+    background: linear-gradient(45deg,#15232E,#2196f3);
+}
+
+.branche1{
+    width: 130px;
+    height: 3px;
+    background:transparent;
+    transition: 1s;
+    position: absolute;
+    top: 45%;    
+    left: 22%;
+    cursor: pointer;
+    display: block;
+}
+
+span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5%;
+    height: 2px;
+    background: linear-gradient(to left, #2196f3 , white);
+    box-shadow: 0 0 10px white,
+                0 0 40px white,
+                0 0 80px white,
+                0 0 120px white;
+    animation: animate1 2s linear infinite;
+    
+}
+@keyframes animate1
+{
+    0%
+    {
+        transform: translate(2000%);
+    }
+    100%
+    {
+        transform: translate(0%);
+    }
+}
+
+.branche3 span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5%;
+    height: 2px;
+    background: linear-gradient(to right, #2196f3 , white);
+    box-shadow: 0 0 10px white,
+                0 0 40px white,
+                0 0 80px white,
+                0 0 120px white;
+    animation: animate2 2s linear infinite;
+}
+@keyframes animate2
+{
+    0%
+    {
+        transform: translate(0%);
+    }
+    100%
+    {
+        transform: translate(2000%);
+    }
+}
+
+.branche4 span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5%;
+    height: 2px;
+    background: linear-gradient(to right, #2196f3 , white);
+    box-shadow: 0 0 10px white,
+                0 0 40px white,
+                0 0 80px white,
+                0 0 120px white;
+    animation: animate2 2s linear infinite;
+    
+}
+@keyframes animate2
+{
+    0%
+    {
+        transform: translate(0%);
+    }
+    100%
+    {
+        transform: translate(2000%);
+    }
+}
+
+.branche2{
+    width: 130px;
+    height: 3px;
+    background: transparent;
+    transition: 1s;
+    position: absolute;
+    top: 45%;    
+    left: 22%;
+    cursor: pointer;
+}
+
+.branche3{
+    width: 130px;
+    height: 3px;
+    background: transparent;
+    transition: 1s;
+    position: absolute;
+    top: 45%;    
+    left: 22%;
+    cursor: pointer;
+}
+
+.branche4{
+    width: 130px;
+    height: 3px;
+    background:transparent;
+    transition: 1s;
+    position: absolute;
+    top: 45%;    
+    left: 22%;
+    cursor: pointer;
+    
+}
+
+.menu2{
+    height: 140px;
+    width: 160px;
+    margin:auto;
+    top: 5%;
+    bottom: 0%;
+    left: 0%;
+    right: 9%;
+    position: absolute;
+}
+
+.menu2{
+    z-index: -1;
+    transform: scale(0.9);
+}
